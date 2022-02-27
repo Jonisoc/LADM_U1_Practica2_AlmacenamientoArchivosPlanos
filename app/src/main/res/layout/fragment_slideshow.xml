@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <TableRow>
+        <TextView android:layout_width="wrap_content" android:text="Eliminar juego"
+            android:textSize="20dp" android:textColor="@color/black"
+            android:layout_weight="1" android:textAlignment="center"
+            android:padding="15dp" android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="100dp">
+        <TextView android:layout_width="wrap_content" android:text="Indice (1-15):"
+            android:layout_weight="1" android:textColor="@color/black"/>
+        <EditText android:ems="13" android:id="@+id/indice"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="50dp">
+        <TextView android:layout_width="wrap_content" android:text="Titulo:"
+            android:layout_weight="1" android:textColor="@color/black"/>
+        <EditText android:ems="13" android:id="@+id/titulo"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="50dp">
+        <TextView android:layout_width="wrap_content" android:text="Descripción:"
+            android:layout_weight="1" android:textColor="@color/black"/>
+        <EditText android:ems="13" android:id="@+id/descripcion"/>
+    </TableRow>
+
+    <Button android:layout_gravity="center"
+            android:layout_width="wrap_content" android:text="Buscar"
+        android:layout_marginTop="50dp" android:id="@+id/buscar"/>
+    <Button android:layout_gravity="center"
+        android:layout_width="wrap_content" android:text="Modificar"
+        android:backgroundTint="#1869A8" android:id="@+id/modificar"/>
+    <Button android:layout_gravity="center"
+            android:layout_width="wrap_content" android:text="Eliminar"
+        android:backgroundTint="#AA0000" android:id="@+id/eliminar"/>
+
+</TableLayout>
